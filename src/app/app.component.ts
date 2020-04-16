@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nexquare';
+
+
+
+ public  componentsList=[];
+
+  constructor(){
+
+    this.componentsList = [
+   
+    ]
+  }
+
+  addComponent(){
+// alert('add component')
+    this.componentsList.push('componet'+ (this.componentsList.length+1));  
+  }
+  deleteComponent(i){
+
+this.componentsList.splice(i,1);
+
+
+  }
 }
